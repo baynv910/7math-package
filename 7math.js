@@ -745,6 +745,10 @@ $(document).ready(() => {
 
         convertTextToHTML();
     })
+
+    submitedData = () => {
+        return document.querySelector('#editorContainer #editorText').innerHTML;
+    }
     // --------------------------------------------------------//
 });
 //var myHeaders = new Headers();
