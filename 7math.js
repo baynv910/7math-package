@@ -1,4 +1,4 @@
-const myDomain = 'https://baynv910.github.io/7math-package/';
+const myDomain = 'https://baynv910.github.io/7math-package';
 // Load CSS Files
 const loadCSS = (url) => {
     var style = document.createElement("link");
