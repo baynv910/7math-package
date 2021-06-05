@@ -6,43 +6,28 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--dark);
     min-width: 660px;
+}
+
+.my7MathContainer {
+    box-shadow: 0px 0px 15px #0009;
+    border-radius: 10px;
+    padding: 12px 0px;
+}
+
+.readTextFromImage {
+    width: 100%;
+    height: 190px;
+}
+
+#editorArea {
+    width: 100%;
 }
 
 @media only screen and (max-width: 660px) {
     body {
         overflow-x: scroll;
     }
-}
-
-.checkingBrowser {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    background: var(--dark);
-    z-index: 1;
-    visibility: hidden;
-
-}
-
-.checkingBrowser.active {
-    visibility: visible;
-}
-
-.checkingBrowser h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}
-
-#editor-menu {
-    padding: 10px 5px;
 }
 
 .highight-menu {
@@ -59,6 +44,7 @@ body {
     margin-top: 0px;
     min-height: 300px;
     font-size: 24px;
+    width: 100%;
 }
 
 [placeholder]:empty:before {
@@ -89,14 +75,13 @@ body {
     border: 2px solid orangered;
     color: white;
     background: orangered;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #000;
 }
 
 .fractionToShow {
-    border: 2px solid #131e3c;
     padding: 10px;
     overflow: scroll;
-    max-width: 450px;
-    min-width: 400px;
     height: 190px;
     overflow-x: hidden;
     background: #fff;
@@ -126,13 +111,11 @@ body {
 
 .structureTab {
     padding: 10px;
-    border: 2px solid #131e3c;
     overflow: scroll;
     height: 190px;
-    max-width: 450px;
-    min-width: 400px;
     overflow-x: visible;
     overflow-y: visible;
+    background: #fff;
 }
 
 .structureTab button {
@@ -210,11 +193,15 @@ ul.dropdown-menu .dropdown-header {
 }
 
 .changeEditorView li a.btn {
-    background: #fff5 !important;
+    background: #5a6268 !important;
     border-radius: 0;
-    border: 0
+    color: #fff9;
+    border: 0;
 }
 
 .changeEditorView li a.btn.active {
-    background: #fff !important;
+    background: orangered !important;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #000;
 }

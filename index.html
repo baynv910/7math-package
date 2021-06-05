@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Math - Demo</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./7math.css" type="text/css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="jumbotron text-light bg-info p-3">
+            <h1 class="text-center font-weight-bold">GETTING STARTED</h1>
+        </header>
+        <main>
+            <div id="editorContainer"></div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="text/javascript"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/javascript"></script> -->
+    <script src="./7math.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Handle data submit from 7Math
+        handleSubmitData = () => {
+            let myData = document.querySelector('#editorContainer #editorText').innerHTML;
+            alert(myData);
+        }
+    </script>
+</body>
+</html>
