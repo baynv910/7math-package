@@ -663,7 +663,6 @@ const Index = () => {
                 ${htmlEditingArea}
             </div>
         </div>
-        <div class="btn btn-block btn-success" onclick="handleSubmitData()">Submit data</div>
     </div>
     `;
 }
