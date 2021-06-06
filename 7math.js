@@ -646,6 +646,7 @@ htmlEditingArea = `<!----------- EDITING AREA -------------->
 
 const Index = () => {
     return `<div class="container-fluid my7MathContainer">
+        <div class="loader-7math"></div> 
         <div class="row text-center bg-secondary text-light p-1" style="border-radius: 10px 10px 0px 0px">
             <div class="col-6 text-left">7Math | Easy Math - Easy Life</div>
             <div class="col-6 text-right"> <a style="cursor: pointer" data-toggle="modal" data-target="#quickStartGuideModal" class="badge badge-success">Quick Start</a> | <a class="badge badge-info" href='mailto: baynv910@gmail.com'>Contact</a> for help!</div>
@@ -687,6 +688,7 @@ document.body.onload = () => {
 }
 
 $(document).ready(() => {
+    console.log('ready');
     /* == TEMPLATE ================================ */
     // Bold menu
     document.querySelector('#boldButton').addEventListener('click', function() {
@@ -750,5 +752,6 @@ $(document).ready(() => {
     }
     // --------------------------------------------------------//
 });
-//var myHeaders = new Headers();
-//    myHeaders.append('Access-Control-Allow-Origin', '*');
+var myHeaders = new Headers();
+   myHeaders.append('Access-Control-Allow-Origin', '*');
+   myHeaders.append('X-Frame-Options', 'SAMEORIGIN');
