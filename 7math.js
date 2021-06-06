@@ -596,7 +596,7 @@ htmlFractionIconTab =  `<!----------- FRACTION TAB --------------------->
     <div id="representEquation">
         <div class="equationTab">
             <span id="templateEquation" onclick="loadFraction('templateEquation')" class="tabItem btn active border">Equation</span>
-            <span id="readTextFromImageTab" onclick="loadFraction('readTextFromImageTab')" class="tabItem btn border">ORC</span>
+            <span id="readTextFromImageTab" onclick="loadFraction('readTextFromImageTab')" class="tabItem btn border">OCR</span>
             <div class="dropdown dropright d-inline-block">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" style="border:none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     List Symbols
@@ -620,7 +620,7 @@ htmlFractionIconTab =  `<!----------- FRACTION TAB --------------------->
 let htmlInstruction = `<h4 class="text-center bg-info text-light rounded p-2">Instruction</h4>
 <ol class="text-justify pr-2" style="height: 190px; overflow-y: scroll;">
     <li><span class="badge badge-success">Equation</span> includes most polular templates of equation. Point out where to put <b>template equation</b> on the Editor Text, then just select which one you need from dropdown button!</li>
-    <li><span class="badge badge-success">ORC</span> is the <b>Beta version</b>. This time you can import any picture contain text that need to import to the editor. First you <b>Browse</b> the image from your local device, wait a second, then point out where to put data on the Editor Text, next click <b>Read</b> and wait for our app to be ran! Check the result on the Editor Text!</li>
+    <li><span class="badge badge-success">OCR</span> is the <b>Beta version</b>. This time you can import any picture contain text that need to import to the editor. First you <b>Browse</b> the image from your local device, wait a second, then point out where to put data on the Editor Text, next click <b>Read</b> and wait for our app to be ran! Check the result on the Editor Text!</li>
     <li><span class="badge badge-success">List Symbols</span> include all symbols that devide into 05 categories. You can point out where to put data on the Editor Text, then just choose which one you need!</li>
 </ol>`;
 
