@@ -201,7 +201,10 @@ execFileUpload = () => {
             } }
             ).then(({ data: { text } }) => {
             console.log('Completed! Check data in your output box!');
-            execCmd(text);
+
+            // Convert all space to &nbsp;
+            text = text.replaceAll(' ', '&nbsp;');
+            document.execCommand(`insertHTML`, false, text);
         })
         .catch((err) => {
             console.error('Something went wrong: ' + err);
