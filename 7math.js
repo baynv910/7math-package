@@ -682,13 +682,14 @@ document.body.onload = () => {
     }
 
     loadCSS('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
-    loadCSS(`${myDomain}/7math.css`);
+    //loadCSS(`${myDomain}/7math.css`);
     loadScript('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js');
     loadScript('https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js');
+    
 }
 
 $(document).ready(() => {
-    console.log('ready');
+    
     /* == TEMPLATE ================================ */
     // Bold menu
     document.querySelector('#boldButton').addEventListener('click', function() {
