@@ -561,7 +561,7 @@ htmlReadTextFromImage = `<!----------- READ TEXT FROM IMAGE -------------->
         <p class="badge badge-success p-1" id="progressOCR" title="Click to hide it!">Progress: 0.00%</p>
         <input class="form-control mb-2" type="text" id="linkMyFile" placeholder="Paste your image link here..." />
         <input class="btn btn-success form-control" id="btnReadFile" type="button" onclick="execFileUpload()" value="Get my text">
-        <p class="text-info text-right"><small>You've already have a file? Go to <a class="badge badge-success" href="#" target="_blank"> this site</a> then upload your file and get new link!</small></p>
+        <p class="text-info text-right"><small>You've already have a file? Go to <a class="badge badge-success" href="${myDomain}/uploadfile" target="_blank"> this site</a> then upload your file and get new link!</small></p>
     </div>`
 
 htmlFormatTab = `<!----------- FORMAT TAB --------------------->
@@ -665,6 +665,9 @@ const Index = () => {
             </div>
         </div>
     </div>
+    <script>
+        
+    </script>
     `;
 }
 
@@ -682,13 +685,13 @@ document.body.onload = () => {
     }
 
     loadCSS('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
-    //loadCSS(`${myDomain}/7math.css`);
+    loadCSS(`${myDomain}/7math.css`);
     loadScript('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js');
     loadScript('https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js');
     
 }
 
-$(document).ready(() => {
+window.addEventListener('load', () => {
     
     /* == TEMPLATE ================================ */
     // Bold menu
